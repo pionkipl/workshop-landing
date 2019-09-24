@@ -1,7 +1,11 @@
-$h3-bg-color: tan;
+@import '~bootstrap/scss/bootstrap';
 
-h3 {
-  background-color: $h3-bg-color;
-  user-select: none;
-  filter: grayscale(50%);
-}
+@import './abstracts/variables';
+
+@import './base/base';
+@import './base/typography';
+
+@import './layout/header';
+@import './layout/navigation';
+
+@import './pages/sections';

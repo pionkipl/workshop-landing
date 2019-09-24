@@ -3,10 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> <%= htmlWebpackPlugin.options.title %> </title>
-    <meta name="viewport" content="width=device-width,initial- scale=1"> 
+    <title>Workshop</title>
+    <meta name="viewport" content="width=device-width,initial- scale=1">
 </head>
 <body>
-  <h3>Welcome to Webpack 4 starter </h3>
-  <img id="webpack-gif" alt="webpack-gif">
+  <div class="top-section">
+    <header class="header">
+      <div class="logo-box">
+        <img src="assets/images/logo.png" alt="Logo" class="header__logo">
+      </div>
+    </header>
+    <navigation class="navigation">
+      <div class="navigation__nav">
+        <div class="navigation__nav-mobile">
+          <div class="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="menu">
+              <li><a href="#">About workshop</a></li>
+              <li><a href="#">What will you learn</a></li>
+              <li><a href="#">Definition of success</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </navigation>
+  </div>
 </html>
