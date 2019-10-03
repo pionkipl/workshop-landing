@@ -75,16 +75,23 @@
       height: 102vh;
       box-shadow: 0 0 10px #85888c;
       margin: -50px 0 0 70px;
-      padding: 50px;
-      padding-top: 125px;
+      padding: 20px;
+      padding-top: 100px;
       background-image: linear-gradient(to bottom right, $main-color-bright, $main-color-dark);
       transform-origin: 0% 0%;
-      transform: translate(-90%, 0);
+      transform: translate(100%, 0);
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      right:-110%;
 
       li {
         padding: 10px 0;
         transition-delay: 2s;
+        list-style: none;
+
+        a {
+          font-size: 2.5rem;
+          color: white;
+        }
       }
     }
   }

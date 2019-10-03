@@ -1,4 +1,164 @@
+.index {
+  z-index: 2;
+}
+///////////////// top section //////////////////////
 .top-section {
   display: flex;
   height: 100px;
+}
+
+.main-text {
+  h1, li{
+    color: white;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  ul li {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+//////////////// who section ///////////////////
+.who {
+  margin-top: 6rem;
+  &__who-container {
+    display: flex;
+
+    .when-where-div {
+      .when-where {
+        color: $color-grey;
+        font-size: 1.2rem;
+      }
+
+      .bold-p {
+        font-weight: 400;
+        font-size: 1.8rem;
+      }
+    }
+
+    .when-where-div:nth-child(1) {
+      margin-right: 2rem;
+    }
+  }
+
+  .who-img {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  &__who-text {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+  }
+
+  &__list {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    list-style: none;
+    margin-top: 2rem;
+
+    li:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+
+    li::before{
+      content: "\2022";
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    li:nth-child(1)::before {
+      color: $color-orange;
+    }
+
+    li:nth-child(2)::before {
+      color: $color-green;
+    }
+
+    li:nth-child(3)::before {
+      color: $color-red;
+    }
+  }
+}
+
+////////////// learn section /////////////////
+.learn {
+  position: relative;
+  &__magnifying-glass {
+    width: 100%;
+    height: auto;
+  }
+
+  &__charts {
+    width: 100%;
+    height: auto;
+  }
+
+  &__mobile {
+    width: 100%;
+    height: auto;
+  }
+
+  .time {
+    color: $color-grey;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  .learn-text {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+
+  &__analyze-div {
+    .analyze {
+      font-size: 2rem;
+      color: $color-orange;
+      font-weight: 400;
+    }
+
+    .learn-moreinfo-orange {
+      color: $color-orange;
+    }
+  }
+
+  &__project-div {
+    .project {
+      font-size: 2rem;
+      color: $color-green;
+      font-weight: 400;
+    }
+
+    .learn-moreinfo-green {
+      color: $color-green;
+    }
+  }
+
+  &__product-div {
+    .product {
+      font-size: 2rem;
+      color: $color-red;
+      font-weight: 400;
+    }
+
+    .learn-moreinfo-red {
+      color: $color-red;
+    }
+  }
+
 }
