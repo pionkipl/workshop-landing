@@ -10,7 +10,7 @@
   <div class="top-section">
     <header class="header">
       <div class="logo-box">
-        <img src="assets/images/logo.png" alt="Logo" class="header__logo">
+        <a href="#"><img src="assets/images/logo.png" alt="Logo" class="header__logo"></a>
       </div>
     </header>
 
@@ -18,14 +18,14 @@
       <div class="navigation__nav">
         <div class="navigation__nav-mobile">
           <div class="menu-toggle">
-            <input type="checkbox" />
+            <input id="input-toggle" type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
             <ul class="menu">
-              <li><a href="#">About workshop</a></li>
-              <li><a href="#">What will you learn</a></li>
-              <li><a href="#">Definition of success</a></li>
+              <li><a class="link-mobile" href="#who">About workshop</a></li>
+              <li><a class="link-mobile" href="#learn">What will you learn</a></li>
+              <li><a class="link-mobile" href="#speakers">Speakers</a></li>
             </ul>
           </div>
         </div>
@@ -53,7 +53,7 @@
     </div>
   </div>
 
-  <section class="who">
+  <section id="who" class="who">
     <div class="container">
       <div class="row">
         <div class="col-sm who__who-container">
@@ -72,7 +72,7 @@
           <img src="./assets/images/who.png" alt="who" class="who-img">
         </div>
         <div class="col-sm">
-          <h2 class="who__who-text">Who is the workshop addressed to?</h2>
+          <h2 class="heading-text mg-top-3rem">Who is the workshop addressed to?</h2>
           <ul class="who__list">
             <li>You have an idea for a business</li>
             <li>You already have a product but you would like to look at it again and find other ways of development</li>
@@ -83,16 +83,17 @@
     </div>
   </section>
 
-  <section class="learn">
+  <section id="learn" class="learn mg-top-3rem">
     <div class="container index">
+      <h2 class="heading-text pd-top-3rem mg-bottom-5rem">What will you learn?</h2>
       <div class="row">
         <div class="col-sm">
-          <img src="./assets/images/circle1.png" alt="circle1" class="learn__magnifying-glass">
+          <img src="./assets/images/circle1.png" alt="circle1" class="img">
         </div>
         <div class="col-sm learn__analyze-div">
           <p class="analyze">Analyze</p>
           <p class="time">Friday - 5:30AM - 9:30AM</p>
-          <p class="learn-text">We are building a map of the initial state.
+          <p class="text">We are building a map of the initial state.
             We analyze ideas from different perspectives. We identify areas of uncertainty.
             We create a formal business model.</p>
           <p class="learn-moreinfo-orange">BUSINESS MODEL, CANVAS</p>
@@ -103,13 +104,13 @@
         <div class="col-sm learn__project-div">
           <p class="project">Project</p>
           <p class="time">Saturday - 10:00PM - 9:00AM</p>
-          <p class="learn-text">We identify and personalize your target group.
+          <p class="text">We identify and personalize your target group.
             We examine the expectations of your clients and the context in which they use them from your product.
             We design the best way to meet your needs.</p>
           <p class="learn-moreinfo-green">PERSONS UX, CUSTOMER USER JOURNEY MAP</p>
         </div>
         <div class="col-sm">
-          <img src="./assets/images/circle2.png" alt="circle2" class="learn__charts">
+          <img src="./assets/images/circle2.png" alt="circle2" class="img">
         </div>
       </div>
 
@@ -117,15 +118,141 @@
         <div class="col-sm learn__product-div">
           <p class="product">Product</p>
           <p class="time">Sunday - 10:30AM - 7:30PM</p>
-          <p class="learn-text">We design the product in a multidimensional way.
+          <p class="text">We design the product in a multidimensional way.
             We extract its unique value. We test and pitch to create a coherent narrative.</p>
           <p class="learn-moreinfo-red">PAPER PROTOTYPING, STORYTELLING</p>            
         </div>
         <div class="col-sm">
-          <img src="./assets/images/circle3.png" alt="circle3" class="learn__mobile">
+          <img src="./assets/images/circle3.png" alt="circle3" class="img">
         </div>
       </div>
     </div>
-    <div class="oval-pink"></div>
+    <div class="oval-normal oval-pink"></div>
   </section>
+
+  <section id="speakers" class="speakers">
+    <div class="container">
+        <h2 class="heading-text mg-bottom-5rem">Speakers</h2>
+      <div class="row speakers__container">
+        <div class="col-sm card-speaker-container">
+          <div class="card-speaker">
+            <img src="./assets/images/greenman.png" alt="greenman" class="card-img">
+            <h3 class="speaker-name green">Arthur Morgan</h3>
+            <p class="text">We are building a map of the initial state.
+              We analyze ideas from different perspectives.
+              We identify areas of uncertainty. We create a formal business model.</p>
+          </div>
+        </div>
+
+        <div class="col-sm card-speaker-container">
+            <div class="card-speaker">
+              <img src="./assets/images/orangeman.png" alt="orangeman" class="card-img">
+              <h3 class="speaker-name orange">John Marston</h3>
+              <p class="text">We design the product in a multidimensional way.
+                We extract its unique value. We test and pitch to create a coherent narrative.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="price">
+    <div class="container">
+      <h2 class="heading-text white pd-top-3rem">Price</h2>
+      <div class="row price__container">
+        <div class="col-sm card-price-container">
+          <div class="price-card">
+            <div class="circles">
+              <span class="circle1"></span>
+              <span class="circle2"></span>
+            </div>
+            <p class="text grey">STANDARD PRICE FOR
+              2 PERSONS TEAM</p>
+            <div class="price-number">2900zł</div>
+          </div>
+        </div>
+        <div class="col-sm card-price-container">
+          <img src="./assets/images/price-img.png" alt="price-img" class="price-img img">
+        </div>
+        <div class="col-sm card-price-container">
+          <div class="price-card">
+            <div class="circles">
+              <span class="circle3"></span>
+            </div>
+            <p class="text grey">ADDING  NEW
+              PARTICIPANT TO TEAM</p>
+            <div class="price-number">+500zł</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="oval-normal oval-black-light"></div>
+  </section>
+
+  <section class="book">
+    <div class="container">
+      <h2 class="heading-text white pd-top-3rem mg-bottom-5rem">Book place</h2>
+      <div class="book-container">
+          <form class="row book-form" id="form1" action="#">
+            <div class="col-sm col-md-6">
+              <p>
+                <label class="book-label">
+                  <span class="star">*</span>Name and Surname
+                </label><br>
+                <input type="text" name="name">
+              </p>
+              <p>
+                <label class="book-label">
+                  Phone number
+                </label><br>
+                <input type="text" name="phone">
+              </p>
+              <p>
+                <label class="book-label">
+                  <span class="star">*</span>Number participants
+                </label><br>
+                <input type="text" name="number">
+              </p>
+            </div>
+            <div class="col-sm col-md-6">
+              <p>
+                <label class="book-label">
+                  <span class="star">*</span>Email address
+                </label><br>
+                <input type="text" name="email">
+              </p>
+              <p>
+                <label class="book-label">
+                  <span class="star">*</span>Write about topic
+                </label><br>
+                <textarea name="message" cols="30" rows="10"></textarea>
+              </p>
+              <div class="form-submit">
+                <p class="obligatory">Obligatory</p>
+                <button type="submit" form="form1" class="book-btn">
+                  Book a place
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+    
+    <div class="oval-normal oval-black"></div>
+  </section>
+
+  <script>
+    const links = document.querySelectorAll('.link-mobile');
+    const hamburger = document.querySelector('#input-toggle');
+
+
+
+    for (let i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', checked);
+    }
+
+    function checked() {
+      hamburger.checked = false;
+    }
+  </script>
 </html>

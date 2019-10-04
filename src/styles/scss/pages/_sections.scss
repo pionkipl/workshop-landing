@@ -1,6 +1,23 @@
 .index {
   z-index: 2;
 }
+
+.text {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.heading-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
 ///////////////// top section //////////////////////
 .top-section {
   display: flex;
@@ -13,7 +30,7 @@
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
   }
 
@@ -31,7 +48,7 @@
 
 //////////////// who section ///////////////////
 .who {
-  margin-top: 6rem;
+  margin-top: 12rem;
   &__who-container {
     display: flex;
 
@@ -56,11 +73,6 @@
     width: 100%;
     height: auto;
     margin-top: 2rem;
-  }
-
-  &__who-text {
-    font-size: 2.5rem;
-    margin-top: 2.5rem;
   }
 
   &__list {
@@ -99,20 +111,6 @@
 ////////////// learn section /////////////////
 .learn {
   position: relative;
-  &__magnifying-glass {
-    width: 100%;
-    height: auto;
-  }
-
-  &__charts {
-    width: 100%;
-    height: auto;
-  }
-
-  &__mobile {
-    width: 100%;
-    height: auto;
-  }
 
   .time {
     color: $color-grey;
@@ -120,12 +118,9 @@
     text-transform: uppercase;
   }
 
-  .learn-text {
-    font-size: 1.3rem;
-    font-weight: 300;
-  }
-
   &__analyze-div {
+    order: -1;
+
     .analyze {
       font-size: 2rem;
       color: $color-orange;
@@ -160,5 +155,137 @@
       color: $color-red;
     }
   }
+}
 
+//////////// speaker section ////////////
+.speakers {
+  background-color: $color-pink;
+  &__container {
+    .card-speaker-container {
+      display: flex;
+      justify-content: center;
+
+      .card-speaker {
+        max-width: 30rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        background-color: white;
+        padding: 1.5rem;
+        box-shadow: 3px 2px 8px 0px rgba(0,0,0,0.25);
+
+        .speaker-name {
+          font-size: 2rem;
+          font-weight: 400;
+        }
+
+        .card-img {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+    
+  }
+}
+
+///////////// Price secttion ///////////////
+.price {
+  position: relative;
+  padding-bottom: 12rem;
+  &__container {
+    .card-price-container {
+      display: flex;
+      justify-content: center;
+      .price-card {
+        background-color: $color-black;
+        padding: 2rem;
+        max-width: 20rem;
+        margin-top: 4rem;
+  
+      .circles {
+        .circle1 {
+          width: 1rem;
+          height: 1rem;
+          background-color: $color-green;
+          border-radius: 100%;
+        }
+
+        .circle2 {
+
+        }
+      }
+
+      .price-number {
+        color: white;
+        font-size: 2.8rem;
+        font-weight: 700;
+        }
+      }
+    }
+    
+  }
+}
+
+.book {
+  position: relative;
+  padding-bottom: 8rem;
+  margin-top: -7rem;
+  
+  .book-container {
+    .book-form {
+      .book-label {
+        color: white;
+        font-size: 1.6rem;
+
+        .star {
+          color: $color-green;
+        }
+      }
+
+      .form-submit {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+
+        .obligatory {
+          font-size: 1.2rem;
+          &::before {
+            content: "*";
+            color: $color-green;
+          }
+        }
+
+        .book-btn {
+          background-color: $color-green;
+          border: none;
+          padding: 1rem 2rem;
+          border-radius: 2rem;
+          color: white;
+          text-transform: uppercase;
+          font-weight: 700;
+          cursor: pointer;
+        }
+      }
+
+      input {
+        @include input-view;
+        height: 3rem;
+        font-size: 2rem;
+        
+        &:focus {
+          outline: 1px solid $color-green;
+        }
+      }
+
+      textarea {
+        @include input-view;
+        font-size: 1.6rem;
+
+        &:focus {
+          outline: 1px solid $color-green;
+        }
+      }
+    }
+  }
 }
