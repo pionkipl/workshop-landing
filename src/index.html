@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial- scale=1">
 </head>
 <body>
-  <div class="top-section">
+  <div class="top-section mg-bottom-5rem">
     <header class="header">
       <div class="logo-box">
         <a href="#"><img src="assets/images/logo.png" alt="Logo" class="header__logo"></a>
@@ -26,8 +26,17 @@
               <li><a class="link-mobile" href="#who">About workshop</a></li>
               <li><a class="link-mobile" href="#learn">What will you learn</a></li>
               <li><a class="link-mobile" href="#speakers">Speakers</a></li>
+              <li><a class="link-mobile" href="#book">Book</a></li>
             </ul>
           </div>
+        </div>
+        <div class="navigation__nav-desktop">
+          <ul class="menu">
+            <li><a href="#who">About workshop</a></li>
+            <li><a href="#learn">What will you learn</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#book">Book</a></li>
+          </ul>
         </div>
       </div>
     </navigation>
@@ -38,7 +47,7 @@
   <div class="main-text">
     <div class="container">
       <div class="row">
-        <div class="col-sm">
+        <div class="col-sm main-text__container">
           <h1>Intensive weekend workshop of your product</h1>
           <ul>
             <li>3 days of workshop</li>
@@ -189,7 +198,7 @@
     <div class="oval-normal oval-black-light"></div>
   </section>
 
-  <section class="book">
+  <section id="book" class="book">
     <div class="container">
       <h2 class="heading-text white pd-top-3rem mg-bottom-5rem">Book place</h2>
       <div class="book-container">
@@ -244,8 +253,6 @@
   <script>
     const links = document.querySelectorAll('.link-mobile');
     const hamburger = document.querySelector('#input-toggle');
-
-
 
     for (let i = 0; i < links.length; i++) {
       links[i].addEventListener('click', checked);
