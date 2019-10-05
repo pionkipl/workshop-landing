@@ -6,6 +6,14 @@
     border-bottom-right-radius: 30%;
     position: absolute;
     left: -11%;
+
+    @include media-breakpoint-up (sm) {
+        height: 42vh;
+    }
+
+    @include media-breakpoint-up (lg) {
+        height: 52vh;
+    }
 }
 
 .oval-normal {

@@ -5,12 +5,20 @@
 .text {
   font-size: 1.3rem;
   font-weight: 300;
+
+  @include media-breakpoint-up (lg) {
+    font-size: 1.6rem;
+  }
 }
 
 .heading-text {
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
+
+  @include media-breakpoint-up (xl) {
+    font-size: 3rem;
+  }
 }
 
 .img {
@@ -40,6 +48,10 @@
     @include media-breakpoint-up (lg) {
       font-weight: 700;
     }
+
+    @include media-breakpoint-up (xl) {
+      font-size: 3.5rem;
+    }
   }
 
   &__container {
@@ -52,15 +64,20 @@
     margin-left: 2rem;
     font-size: 1.5rem;
     font-weight: 300;
+
+    @include media-breakpoint-up (xl) {
+      font-size: 2rem;
+    }    
   }
 
   .hero-img {
     width: 100%;
     height: auto;
-    max-width: 44rem;
+    max-width: 36rem;
 
     @include media-breakpoint-up (md) {
       font-size: 3rem;
+      max-width: 44rem;
     }
   }
 }
@@ -75,11 +92,19 @@
       .when-where {
         color: $color-grey;
         font-size: 1.2rem;
+
+        @include media-breakpoint-up (xl) {
+          font-size: 2rem;
+        }
       }
 
       .bold-p {
         font-weight: 400;
         font-size: 1.8rem;
+
+        @include media-breakpoint-up (xl) {
+          font-size: 2.2srem;
+        }
       }
     }
 
@@ -88,18 +113,36 @@
     }
   }
 
-  .who-img {
-    width: 100%;
-    height: auto;
-    margin-top: 2rem;
-  }
+  .who-img-container {
+    display: flex;
+    justify-content: center;
 
+    @include media-breakpoint-up (sm) {
+      display: block
+    }
+
+    .who-img {
+      width: 100%;
+      height: auto;
+      margin-top: 2rem;
+      max-width: 32rem;
+
+      @include media-breakpoint-up (lg) {
+        max-width: 44rem;
+      }
+    }
+  }
+  
   &__list {
     margin-left: 2rem;
     font-size: 1.2rem;
     font-weight: 300;
     list-style: none;
     margin-top: 2rem;
+
+    @include media-breakpoint-up (xl) {
+      font-size: 1.6rem;
+    }
 
     li:not(:first-child) {
       margin-top: 1.5rem;
@@ -135,43 +178,89 @@
     color: $color-grey;
     font-size: 1.2rem;
     text-transform: uppercase;
+
+    @include media-breakpoint-up (lg) {
+      font-size: 1.6em;
+    }
   }
 
   &__analyze-div {
     order: -1;
 
+    @include media-breakpoint-up (md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .analyze {
       font-size: 2rem;
       color: $color-orange;
       font-weight: 400;
+
+      @include media-breakpoint-up (lg) {
+        font-size: 3rem;
+      }
     }
 
     .learn-moreinfo-orange {
       color: $color-orange;
+
+      @include media-breakpoint-up (lg) {
+        font-size: 1.6rem;
+      }
     }
   }
 
   &__project-div {
+    @include media-breakpoint-up (md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .project {
       font-size: 2rem;
       color: $color-green;
       font-weight: 400;
+
+      @include media-breakpoint-up (lg) {
+        font-size: 3rem;
+      }
     }
 
     .learn-moreinfo-green {
       color: $color-green;
+
+      @include media-breakpoint-up (lg) {
+        font-size: 1.6rem;
+      }
     }
   }
 
   &__product-div {
+    @include media-breakpoint-up (md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .product {
       font-size: 2rem;
       color: $color-red;
       font-weight: 400;
+
+      @include media-breakpoint-up (lg) {
+        font-size: 3rem;
+      }
     }
 
     .learn-moreinfo-red {
       color: $color-red;
+
+      @include media-breakpoint-up (lg) {
+        font-size: 1.6rem;
+      }
     }
   }
 }
@@ -212,34 +301,83 @@
 .price {
   position: relative;
   padding-bottom: 12rem;
+
   &__container {
+
+    @include media-breakpoint-up (md) {
+      height: 45rem;
+    }
     .card-price-container {
       display: flex;
       justify-content: center;
+
+      @include media-breakpoint-up (md) {
+        display: flex;
+      }
+
       .price-card {
         background-color: $color-black;
         padding: 2rem;
         max-width: 20rem;
         margin-top: 4rem;
-  
-      .circles {
-        .circle1 {
-          width: 1rem;
-          height: 1rem;
-          background-color: $color-green;
-          border-radius: 100%;
+
+        .text-price {
+          font-size: 1rem;
+
+          @include media-breakpoint-up (lg) {
+            font-size: 1.2rem;
+          }
         }
 
-        .circle2 {
+        .circles {
+          margin-bottom: 1rem;
+          display: flex;
+          .circle1 {
+            width: 1rem;
+            height: 1rem;
+            background-color: $color-green;
+            border-radius: 100%;
+            margin-right: 1rem;
+          }
 
+          .circle2 {
+            width: 1rem;
+            height: 1rem;
+            background-color: $color-orange;
+            border-radius: 100%;
+          }
+
+          .circle3 {
+            width: 1rem;
+            height: 1rem;
+            background-color: $color-red;
+            border-radius: 100%;
+          }
         }
-      }
 
       .price-number {
         color: white;
         font-size: 2.8rem;
         font-weight: 700;
         }
+      }
+    }
+
+    .card-price-1 {
+      @include media-breakpoint-up (md) {
+        align-items: flex-start;
+      }
+    }
+
+    .card-price-2 {
+      @include media-breakpoint-up (md) {
+        align-items: center;
+      }
+    }
+
+    .card-price-3 {
+      @include media-breakpoint-up (md) {
+        align-items: flex-end;
       }
     }
     
