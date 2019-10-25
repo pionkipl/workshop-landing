@@ -74,6 +74,7 @@
     width: 100%;
     height: auto;
     max-width: 36rem;
+    margin-top: 2rem;
 
     @include media-breakpoint-up (md) {
       font-size: 3rem;
@@ -84,7 +85,7 @@
 
 //////////////// who section ///////////////////
 .who {
-  margin-top: 12rem;
+  margin-top: 4rem;
   &__who-container {
     display: flex;
 

@@ -1,23 +1,15 @@
 .oval {
-    width: 117vw;
-    height: 60vh;
+    width: 123vw;
+    height: 485px;
     background: linear-gradient(135deg, $main-color-bright, $main-color-dark);
     border-bottom-left-radius: 30%;
     border-bottom-right-radius: 30%;
     position: absolute;
     left: -11%;
-
-    @include media-breakpoint-up (sm) {
-        height: 42vh;
-    }
-
-    @include media-breakpoint-up (lg) {
-        height: 52vh;
-    }
 }
 
 .oval-normal {
-    width: 117vw;
+    width: 123vw;
     height: 100%;
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
